@@ -25,7 +25,7 @@ ul {
 /*Header*/
   header {
     font-size: 4rem;
-    background-color: black;
+    background:linear-gradient(to right,#070707 60%,#343434 70%);
     grid-row-start: 1;
     grid-column-end: 5;
     grid-column-start: 1;
@@ -36,7 +36,7 @@ ul {
       justify-content: space-evenly;
   }
   .index__logo {
-    width: 120px;
+    width: 260px;
     max-width: 100%;
   }
   .hoverLi{
@@ -87,8 +87,12 @@ ul {
       grid-row-end: 5;
       grid-row-start: 4;
       font-size: 5rem;
-      background-image: url(../images/madera.jpg);
-      
+      background-image: url(../images/madera.jpg);     
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 @media screen and (max-width:768px) {
@@ -248,7 +252,21 @@ ul {
     font-size: 2rem;
   }
 }
-
+.noticias{
+  background-color: aliceblue;
+}
+.noticias__container{ 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 50rem;
+  justify-items: center;
+  align-items: center;
+}
+  .noticias h1{
+  font-size: 5rem;
+  grid-column-start: 3;
+}
 /* contacto 
 /* @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
