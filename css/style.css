@@ -1,57 +1,60 @@
 /* header */
-.links{
-  color: aliceblue;
-}
-header{
-  font-size: 2rem;
-  height: 100px;
-  background:linear-gradient(to right,#070707 50%,#343434 60%);
-}
-.hoverLi:hover{
-  border-style: solid;
-  border-color: gold grey;
-  border-width: 2px;
- }
-.logoContainer{
-  background-image: url(../images/logo3.png);
-  background-size: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100px;
-  width: 300px;
-}
-.menuUl{
-  display: flex;
-  align-items: center;
-}
-.indexLink{
-  padding: 3rem;
+@media screen and (min-width:992px) { 
+  nav{
+    font-size: 2rem;
+    height: 100px;
+    background:linear-gradient(to right,#070707 50%,#343434 60%);
+  }
+  .hoverLi:hover{
+    border-style: solid;
+    border-color: gold grey;
+    border-width: 2px;
+   }
+  .logoContainer{
+    background-image: url(../images/logo3.png);
+    background-size: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 300px;
+  }
+  ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .links{
+    text-decoration: none;
+    color: white;
+  }
+  .indexLink{
+    visibility: hidden;
+    padding: 3rem;
+  }
+  
 }
 /* index */
 .indexBackground{
+  flex-direction: column;
+  justify-content: space-around;
   background-image: url(../images/cafe-fondo.png);
   background-size: cover;
   height: 80vh;
   background-position: center;
 }
 .nosotros{
+  padding: 10vh;
   color: aliceblue;
   font-size: 2rem;
 }
-.nosotros h1{
-  padding-top: 3rem;
-  padding-left: 10rem;
-}
-.consultas{
-  padding-top: 3rem;
-  padding-left: 10rem;
-}
 /* footer */
 footer{
-  position: absolute;
   bottom: 0%;
+  position:fixed;
   color: #070707;
-  height: 9.8vh;
+  height: 10vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -68,348 +71,15 @@ footer{
   background-repeat: no-repeat;
   background-position-y: 5rem;
   background-color: beige;
+  background-position-x: -4rem;
 }
 .carouselBody{
   background-color: #34343473;
 }
 /* Ubicación */
-.ubicacion__grid{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.1fr 0.8fr 0.8fr 0.13fr;
-}
-.map {
-  display: flex;
-  flex-direction: row;
-  flex-direction: row-reverse;
-}
-
-.ubicacion__p{
-  font-size: 3rem;
-  max-width: 60%;
-}
-.map__map {
-  min-width: 40%;
-}
-@media screen and (max-width:768px) {
-  header{
-    font-size: 3rem;
-  }
-  .map__map{
-    width: 50%;
-  }
-  .ubicacion__p{
-    font-size: 2rem;
-  }
-  footer{
-    font-size: 3rem;
-  }
-}
-@media screen and (max-width:480px){
-  
-  a{
-    color:black;
-  }
-  .map__map{
-    min-width: 100%;
-  }
-  .ubicacion__grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.8fr 0.2fr 0.18fr;
-}
-  header {
-    font-size: 2rem;
-    background-color: #656565;
-  }
-  header ul {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-start;
-  }
-  .index__logo {
-    border-radius: 1rem; 
-  }
-  .map {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .index__logo {
-    border-radius: 1rem; 
-  }
-  footer{
-    font-size: 2rem;
-  }
-}
-.noticias{
-  background-color: aliceblue;
-}
-.noticias__container{ 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  height: 100rem;
-  justify-items: center;
-  align-items: center;
-  margin: 0 10rem;
-  background-color: rgba(65, 105, 225, 0.26);
-}
-.noticias h1{
-  font-size: 5rem;
-  grid-column-start: 2;
-}
-.container__diario{
-  grid-row-start: 2;
-  grid-column-start: 1;
-  grid-column-end: 3;
+.ubicacio
+.claseMap{
   display: flex;
   flex-direction: row;
 }
-.noticia__cuerpo{
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.562);
-}
-.noticias h2{
-  font-size: 3rem;
-  margin-left: 2rem;
-}
-.diario__img{
-  width: 500px;
-  /* max-width: 100%; */
-}
-.noticias__container p{
-font-size: 2rem;
-}
-/* animacion diario */
-.container__diario:hover{ 
-  transform: scale(1.1);
-  transition: all 1s;
-
-}
-/* contacto 
-/* @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-
-html {
-  font-family: 'Montserrat', Arial, sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  background: #F2F3EB;
-}
-
-button {
-  overflow: visible;
-}
-
-button, select {
-  text-transform: none;
-}
-
-button, input, select, textarea {
-  color: #5A5A5A;
-  font: inherit;
-  margin: 0;
-}
-
-input {
-  line-height: normal;
-}
-
-textarea {
-  overflow: auto;
-}
-
-#container {
-  border: solid 3px #474544;
-  max-width: 768px;
-  margin: 60px auto;
-  position: relative;
-}
-
-form {
-  padding: 37.5px;
-  margin: 50px 0;
-}
-
-h1 {
-  color: #474544;
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: 7px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.underline {
-  border-bottom: solid 2px #474544;
-  margin: -0.512em auto;
-  width: 80px;
-}
-
-.icon_wrapper {
-  margin: 50px auto 0;
-  width: 100%;
-}
-
-.icon {
-  display: block;
-  fill: #474544;
-  height: 50px;
-  margin: 0 auto;
-  width: 50px;
-}
-
-.email {
-	float: right;
-	width: 45%;
-}
-
-input[type='text'], [type='email'], select, textarea {
-	background: none;
-  border: none;
-	border-bottom: solid 2px #474544;
-	color: #474544;
-	font-size: 1.000em;
-  font-weight: 400;
-  letter-spacing: 1px;
-	margin: 0em 0 1.875em 0;
-	padding: 0 0 0.875em 0;
-  text-transform: uppercase;
-	width: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-input[type='text']:focus, [type='email']:focus, textarea:focus {
-	outline: none;
-	padding: 0 0 0.875em 0;
-}
-
-.message {
-	float: none;
-}
-
-.name {
-	float: left;
-	width: 45%;
-}
-
-select {
-  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
-  outline: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-}
-
-select::-ms-expand {
-  display: none;
-}
-
-.subject {
-  width: 100%;
-}
-
-.telephone {
-  width: 100%;
-}
-
-textarea {
-	line-height: 150%;
-	height: 150px;
-	resize: none;
-  width: 100%;
-}
-
-::-webkit-input-placeholder {
-	color: #474544;
-}
-
-:-moz-placeholder { 
-	color: #474544;
-	opacity: 1;
-}
-
-::-moz-placeholder {
-	color: #474544;
-	opacity: 1;
-}
-
-:-ms-input-placeholder {
-	color: #474544;
-}
-
-#form_button {
-  background: none;
-  border: solid 2px #474544;
-  color: #474544;
-  cursor: pointer;
-  display: inline-block;
-  font-family: 'Helvetica', Arial, sans-serif;
-  font-size: 0.875em;
-  font-weight: bold;
-  outline: none;
-  padding: 20px 35px;
-  text-transform: uppercase;
-  -webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-#form_button:hover {
-  background: #474544;
-  color: #F2F3EB;
-}
-
-@media screen and (max-width: 768px) {
-  #container {
-    margin: 20px auto;
-    width: 95%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  h1 {
-    font-size: 26px;
-  }
-  
-  .underline {
-    width: 68px;
-  }
-  
-  #form_button {
-    padding: 15px 25px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  h1 {
-    font-size: 18px;
-  }
-  
-  .icon {
-    height: 35px;
-    width: 35px;
-  }
-  
-  .underline {
-    width: 53px;
-  }
-  
-  input[type='text'], [type='email'], select, textarea {
-    font-size: 0.875em;
-  } */
-
+/*-----------------------------------noticias------------------------------------------------------ */

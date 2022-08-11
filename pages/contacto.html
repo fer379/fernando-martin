@@ -6,22 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>estudio martín</title>
     <link rel="icon" type="logo estudio martin" href="../images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css"    
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="./especialistas.html">Especialistas</a> </li>
-                <li><a href="./informacion.html">Información</a> </li>
-                <li><a href="../index.html"><img class="index__logo" src="../images/logo.png" alt="logo"></a></li>                <li><a href="./ubicacion.html">Ubicación</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+  <header >
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link links hoverLi" href="./pages/noticias.html">Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links hoverLi" href="./pages/especialistas.html">Especialistas</a>
+              </li>
+              
+              <div class="logoContainer">
+                 <li class="nav-item">
+                    <a class="nav-link indexLink"  aria-current="page" href="./index.html">Inicio</a>
+                 </li>
+              </div> 
+              <li class="nav-item">
+                <a class="nav-link links hoverLi" href="./pages/ubicacion.html">Ubicacíon</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links hoverLi" href="./pages/contacto.html">Contacto</a>
+              </li>
             </ul>
-        </nav>
-    </header>
+          </div>
+        </div>
+      </nav>
+</header>
     <main>
         <section>
-            <div id="container">
+            <!-- <div id="container">
                 <h1>&bull; Nos comunicamos con usted &bull;</h1>
                 <div class="underline">
                 </div>
@@ -60,9 +84,9 @@
                   <div class="submit">
                     <input type="submit" value="Enviar" id="form_button" />
                   </div>
-                </form><!-- // End form -->
+                </form>// End form -->
               </div><!-- // End #container -->
-            <!-- <form action="/action_page.php" method="post">
+            <form action="/action_page.php" method="post">
                 <label for="fname">Nombre:</label>
                 <input type="text" placeholder="Juan Domingo" name="fname">
                 <label for="lname">Apellido:</label>
@@ -71,15 +95,16 @@
                 <input type="email" placeholder="Juan@hotmail.com" name="email">
                 <label for="phone">Numero de telefono:</label>
                 <input type="tel" placeholder="2215076113" name="phone">
-                <label for="dia">Dia de la semana:</label>
-                <input type="datetime-local" name="dias"
             </form>
-        </div>   -->
+        </div>  
         </section>
     </main>
-    <footer>
-        <span>2215468483</span>
-        <span>Horario de consulta:8:00HS-15:00HS</span>
-    </footer>
+    <footer class="container-fluid">
+      <span>Tel:2215468483</span>
+      <span>Horario de consulta 8:00HS a 15:00HS</span>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
