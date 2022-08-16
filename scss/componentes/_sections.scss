@@ -1,0 +1,30 @@
+// Main Index
+.indexMain{
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(../images/cafe-fondo.png);
+    background-size: cover;
+    height: 80vh;
+    background-position: center;
+      .nosotros{
+        padding: 10vh;
+        color: aliceblue;
+        font-size: 2rem;
+      }
+}
+// Especialistas  
+.especialistasBody{
+background-image: url(../images/justicia.png);
+background-repeat: no-repeat;
+background-position-y: 5rem;
+background-color: beige;
+background-position-x: -4rem;
+height: 80vh;
+    .especialistas{
+        padding-top: 3rem;
+        .carouselBody{
+            background-color: #34343473;
+        }
+                
+    }
+}  

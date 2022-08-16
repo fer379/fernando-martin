@@ -1,0 +1,46 @@
+ // ---------------------------------------heder---------------------------------------------
+
+header{
+    @media screen and (min-width:992px) { 
+        nav{
+          font-size: 2rem;
+          height: 100px;
+          background:linear-gradient(to right,#070707 50%,#343434 60%);
+            .logoContainer{
+            background-image: url(../images/logo3.png);
+            background-size: 400px;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100px;
+            width: 300px;
+            }
+            ul{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-evenly;
+            }
+            .links{
+            text-decoration: none;
+            color: $fc-white;
+                &:hover{
+                    border: solid 2px gold gray;
+                    }
+            }
+            .indexLink{
+            visibility: hidden;
+            }
+        }
+    }    
+}  
+// ------------------------------------------------Footer-----------------------------------------
+footer{
+    bottom: 0%;
+    position:fixed;
+    color: $fc-black;
+    height: 10vh;
+    @extend %flex;
+    font-size: 2rem;
+    background-image: url(../images/madera.jpg);
+  } 

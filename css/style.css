@@ -1,16 +1,18 @@
-/* header */
-@media screen and (min-width:992px) { 
-  nav{
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 992px) {
+  header nav {
     font-size: 2rem;
     height: 100px;
-    background:linear-gradient(to right,#070707 50%,#343434 60%);
+    background: linear-gradient(to right, #070707 50%, #343434 60%);
   }
-  .hoverLi:hover{
-    border-style: solid;
-    border-color: gold grey;
-    border-width: 2px;
-   }
-  .logoContainer{
+  header nav .logoContainer {
     background-image: url(../images/logo3.png);
     background-size: 400px;
     background-position: center;
@@ -18,25 +20,35 @@
     height: 100px;
     width: 300px;
   }
-  ul{
+  header nav ul {
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .links{
+  header nav .links {
     text-decoration: none;
     color: white;
   }
-  .indexLink{
-    visibility: hidden;
-    padding: 3rem;
+  header nav .links:hover {
+    border: solid 2px gold gray;
   }
-  
+  header nav .indexLink {
+    visibility: hidden;
+  }
 }
-/* index */
-.indexBackground{
+
+footer {
+  bottom: 0%;
+  position: fixed;
+  color: black;
+  height: 10vh;
+  font-size: 2rem;
+  background-image: url(../images/madera.jpg);
+}
+
+.indexMain {
   flex-direction: column;
   justify-content: space-around;
   background-image: url(../images/cafe-fondo.png);
@@ -44,42 +56,25 @@
   height: 80vh;
   background-position: center;
 }
-.nosotros{
+.indexMain .nosotros {
   padding: 10vh;
   color: aliceblue;
   font-size: 2rem;
 }
-/* footer */
-footer{
-  bottom: 0%;
-  position:fixed;
-  color: #070707;
-  height: 10vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: 2rem;
-  background-image: url(../images/madera.jpg);
-}
-/* Especialistas */
- /* especialistas */
- .especialistas{
-  padding-top: 3rem;
-}
-.especialistasBody{
+
+.especialistasBody {
   background-image: url(../images/justicia.png);
   background-repeat: no-repeat;
   background-position-y: 5rem;
   background-color: beige;
   background-position-x: -4rem;
+  height: 80vh;
 }
-.carouselBody{
-  background-color: #34343473;
+.especialistasBody .especialistas {
+  padding-top: 3rem;
 }
-/* Ubicación */
-.ubicacio
-.claseMap{
-  display: flex;
-  flex-direction: row;
+.especialistasBody .especialistas .carouselBody {
+  background-color: rgba(52, 52, 52, 0.4509803922);
 }
-/*-----------------------------------noticias------------------------------------------------------ */
+
+/*# sourceMappingURL=style.css.map */
